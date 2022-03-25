@@ -445,7 +445,7 @@ function slider({container, slide, nextArrow, prevArrow, totalCounter, currentCo
     slidesWrapper.style.overflow = 'hidden';
     
     slides.forEach(slide => {
-        slide.style.width = width;
+        slide.style.width = '100vw';
     });
 
     slider.style.position = 'relative';
