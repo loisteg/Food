@@ -1,4 +1,5 @@
 import {getResources} from '../services/services';
+import data from '../../db.json';
 
 
 function cards() {
@@ -43,12 +44,23 @@ function cards() {
         }
     }
 
-    getResources('http://localhost:3000/menu')
-    .then(data => {
-        data.forEach(({src, alt, title, descr, price}) => {
-            new Cards(src, alt, title, descr, price, '.menu .container').render();
-        });
-    });
+    new Cards("img/tabs/vegy.jpg", "vegy", "Меню 'Фитнес'", "Меню 'Фитнес' - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!", 9, '.menu .container').render();
+    new Cards("img/tabs/post.jpg", "post", "Меню 'Постное'", "Меню 'Постное' - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.", 14, '.menu .container').render();
+    new Cards("img/tabs/elite.jpg", "elite", "Меню 'Премиум'", "В меню 'Премиум' мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!", 21, '.menu .container').render();
+
+
+    // console.log(data) 
+
+    // data.forEach(({src, alt, title, descr, price}) => {
+    //     new Cards(src, alt, title, descr, price, '.menu .container').render();
+    // });
+
+    // getResources('http://localhost:3000/menu')
+    // .then(data => {
+    //     data.forEach(({src, alt, title, descr, price}) => {
+    //         new Cards(src, alt, title, descr, price, '.menu .container').render();
+    //     });
+    // });
 
     // axios.get('http://localhost:3000/menu')
     //     .then(data => {

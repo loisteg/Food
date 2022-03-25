@@ -31,3 +31,208 @@
 .dot_active {
     opacity: 1;
 }
+
+@media (max-width: 1199px) {
+    .sidepanel {
+        display: none;
+    }
+    .offer {
+        padding: 70px 15px 100px 16px;
+    }
+    .offer__advantages {
+        width: 285px;
+    }
+    .offer__advantages h2 {
+        margin-top: 70px;
+    }
+    .tabcontainer {
+        width: 988px;
+    }
+    .order__form {
+        padding: 0;
+    }
+    .promotion__timer .timer {
+        padding-left: 40px;
+    }
+    .header__left-block {
+        display: flex;
+        justify-content: space-around;
+    }
+    .offer .bgc_y {
+        position: absolute;
+        width: 98%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .offer__action {
+        margin-top: 25px;
+    }
+    .offer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .calculating__field {
+        width: 100%;
+    }
+    .calculating__choose_big {
+        width: 100%;
+    }
+    .calculating__choose_big .calculating__choose-item {
+        width: 177px;
+    }
+    .order__input {
+        width: 220px;
+    }
+    .promotion__descr {
+        font-size: 18px;
+    }
+    .promotion__descr span {
+        font-size: 18px;
+    }
+    .promotion__timer .timer__block {
+        width: 80px;
+    }
+    .promotion__timer .timer__block span {
+        font-size: 42px;
+    }
+    .preview__life {
+        display: none;
+    }
+    .tabcontent__descr {
+        position: absolute;
+        top: 228px;
+        right: -145px;
+        width: 475px;
+        height: 223px;
+        padding: 18px;
+        font-size: 18px;
+    }
+    .tabcontainer {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+    .bgc_blue {
+        top: -155px;
+        width: 285px;
+        height: 100%;
+    }
+    .offer .bgc_y {
+        width: 95%;
+    }
+}
+
+@media (max-width: 991px) {
+    .offer__action {
+        margin-top: 25px;
+    }
+    .offer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .calculating__field {
+        width: 100%;
+    }
+    .calculating__choose_big {
+        width: 100%;
+    }
+    .calculating__choose_big .calculating__choose-item {
+        width: 177px;
+    }
+    .order__input {
+        width: 220px;
+    }
+    .promotion__descr {
+        font-size: 18px;
+    }
+    .promotion__descr span {
+        font-size: 18px;
+    }
+    .promotion__timer .timer__block {
+        width: 80px;
+    }
+    .promotion__timer .timer__block span {
+        font-size: 42px;
+    }
+    .preview__life {
+        display: none;
+    }
+    .tabcontent__descr {
+        position: absolute;
+        top: 228px;
+        right: -145px;
+        width: 475px;
+        height: 223px;
+        padding: 18px;
+        font-size: 18px;
+    }
+    .tabcontainer {
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+    .bgc_blue {
+        top: -155px;
+        width: 285px;
+        height: 100%;
+    }
+    .offer .bgc_y {
+        width: 95%;
+    }
+}
+@media (max-width: 767px) {
+    .header__left-block {
+        justify-content: start;
+        min-width: 0;
+    }
+    .header__links {
+        display: none;
+    }
+    .tabcontent__descr {
+        top: 228px;
+        right: -175px;
+        width: 402px;
+        height: 192px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .offer__slider {
+        width: 100%;
+    }
+    .offer__slider-wrapper {
+        width: 546px;
+    }
+    .offer__slider-counter {
+        margin-right: 15px;
+    }
+    .header {
+        padding: 15px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .offer__descr {
+        font-size: 14px;
+    }
+    .offer__advantages h2 {
+        font-size: 28px;
+    }
+    .offer__advantages-text {
+        font-size: 15px;
+    }
+    .offer__advantages {
+        margin-top: 10px;
+    }
+    /* 577 */
+}
+

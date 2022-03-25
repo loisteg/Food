@@ -140,6 +140,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/services */ "./js/services/services.js");
+/* harmony import */ var _db_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../db.json */ "./db.json");
+
 
 
 
@@ -185,12 +187,23 @@ function cards() {
         }
     }
 
-    (0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResources)('http://localhost:3000/menu')
-    .then(data => {
-        data.forEach(({src, alt, title, descr, price}) => {
-            new Cards(src, alt, title, descr, price, '.menu .container').render();
-        });
-    });
+    new Cards("img/tabs/vegy.jpg", "vegy", "Меню 'Фитнес'", "Меню 'Фитнес' - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!", 9, '.menu .container').render();
+    new Cards("img/tabs/post.jpg", "post", "Меню 'Постное'", "Меню 'Постное' - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.", 14, '.menu .container').render();
+    new Cards("img/tabs/elite.jpg", "elite", "Меню 'Премиум'", "В меню 'Премиум' мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!", 21, '.menu .container').render();
+
+
+    // console.log(data) 
+
+    // data.forEach(({src, alt, title, descr, price}) => {
+    //     new Cards(src, alt, title, descr, price, '.menu .container').render();
+    // });
+
+    // getResources('http://localhost:3000/menu')
+    // .then(data => {
+    //     data.forEach(({src, alt, title, descr, price}) => {
+    //         new Cards(src, alt, title, descr, price, '.menu .container').render();
+    //     });
+    // });
 
     // axios.get('http://localhost:3000/menu')
     //     .then(data => {
@@ -761,6 +774,16 @@ async function getResources(url) {
 
 
 
+/***/ }),
+
+/***/ "./db.json":
+/*!*****************!*\
+  !*** ./db.json ***!
+  \*****************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"menu":[{"src":"img/tabs/vegy.jpg","alt":"vegy","title":"Меню \'Фитнес\'","descr":"Меню \'Фитнес\' - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!","price":9},{"src":"img/tabs/post.jpg","alt":"post","title":"Меню \'Постное\'","descr":"Меню \'Постное\' - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.","price":14},{"src":"img/tabs/elite.jpg","alt":"elite","title":"Меню \'Премиум\'","descr":"В меню \'Премиум\' мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!","price":21}],"requests":[{"id":1},{"id":2},{"name":"dsadasd","phone":"dsadsadas","id":3},{"name":"dsadasd","phone":"dsadasdasd","id":4},{"name":"dsadas","phone":"sadsadd","id":5},{"name":"dsadsad","phone":"dsadsadsad","id":6},{"name":"dsadsad","phone":"dsadsad","id":7},{"name":"dasdas","phone":"dsadsadsad","id":8},{"name":"фывыф","phone":"фывыфв","id":9},{"name":"выфвыфвыф","phone":"вфывыфвфыв","id":10},{"name":"вавыавы","phone":"213123","id":11},{"name":"asdada","phone":"asdadas","id":12},{"name":"dsadasd","phone":"asddsad","id":13},{"name":"asdsad","phone":"asdasdasd","id":14},{"name":"123213","phone":"213213213","id":15},{"name":"213123","phone":"asdasdasd","id":16},{"name":"dsadsadas","phone":"asdsadsad","id":17},{"name":"asdsad","phone":"sadsadd","id":18},{"name":"dsadsad","phone":"adsadasd","id":19},{"name":"asdsad","phone":"dasdsadsa","id":20},{"name":"sadasd","phone":"asdwasd","id":21},{"name":"sdadsad","phone":"dsadasdasd","id":22},{"name":"dsadsadsad","phone":"asdasdasd","id":23},{"name":"sadadad","phone":"dsadadsad","id":24},{"name":"dsadsad","phone":"dsadsadsad","id":25},{"name":"dsadasd","phone":"dsadsad","id":26},{"name":"вфывфыв","phone":"фвфывыфвыфв","id":27},{"name":"фвыфвыфв","phone":"выфвыфвыф","id":28},{"name":"dsadsadsa","phone":"213213213","id":29}]}');
+
 /***/ })
 
 /******/ 	});
@@ -864,7 +887,7 @@ window.addEventListener('DOMContentLoaded', () => {
         field: '.offer__slider-inner' 
     });
     (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_5__["default"])('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
-    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])('.timer', '2022-03-11');
+    (0,_modules_timer__WEBPACK_IMPORTED_MODULE_6__["default"])('.timer', '2022-11-11');
 });
 
 })();
